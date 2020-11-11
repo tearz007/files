@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <h1>Dating Enrolment</h1>
+</div>
+<form #userform="ngForm">
+ <!-- {{userform.value | json}}
+  <br/>
+  <hr/>
+  {{userModel |json}}
+
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="username" class="form-control" [(ngModel)]= "userModel.name"/>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" name="email" class="form-control" [(ngModel)]= "userModel.email"/>
+  </div>
+
+  <div class="form-group">
+    <label>Phone number</label>
+    <input type="text" name="number" class="form-control" [(ngModel)]= "userModel.number"/>
+  </div>
+
+  <div class="form-group">
+    <select class="custom-select" name="tpc" [(ngModel)]= "userModel.topic">
+      <option selected>Im interested IN</option>
+      <option *ngFor="let topic of topics">{{topic}}</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label>Time preference</label>
+
+    <div class="form-control">
+      <input type="radio" name="time" value="morning" [(ngModel)]= "userModel.time">
+      <label> Morning (09H:00 - 10H:00)</label>
+    </div>
+
+    <div class="form-control">
+      <input type="radio" name="time" value="after" [(ngModel)]= "userModel.time">
+      <label>Afternun (14H:00 - 13H:00)</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+
+    <div class="form-control">
+      <input type="checkbox" name="check" [(ngModel)]= "userModel.promotion">
+      <label> send me promotional offers</label>
+    </div>
+
+  </div>
+   class="form-check-input"  class="form-check-label"-->
+ <div class="form-group">
+    <label>Name</label>
+    <input (input)= 'addservise($event)' type="text" />
+  </div>
+
+  <ol>
+    <li *ngFor= "let info of arry">
+      {{info}}
+    </li>
+  </ol>
+
+  <Button (click)= "clickserve()" routerLink="http" class="btn btn-primary">Submit</Button>
+</form>
+

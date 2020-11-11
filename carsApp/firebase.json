@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "carsApp",
+      "public": "dist/carsApp",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

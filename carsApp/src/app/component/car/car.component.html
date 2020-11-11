@@ -1,0 +1,13 @@
+<br />
+<br />
+<app-car-search></app-car-search>
+
+<div class="carList" *ngFor="let list of user.cars">
+  <h4 class="id">{{ list.id }}</h4>
+  <h4 class="names" (click)="getCars(list.id)">{{ list.name }}</h4>
+
+  <div class="btn" (click)="delete(list.id)">
+    <div class="one btn_col"></div>
+    <div class="two btn_col"></div>
+  </div>
+</div>

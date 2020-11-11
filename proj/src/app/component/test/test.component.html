@@ -1,0 +1,19 @@
+<input #userNm type="text"  placeholder="enter userName" value="{{userName}}">
+<input #pass type="password"  placeholder="enter password" value="{{password}}">
+
+<button  (click)="onClicked(userNm.value,pass.value)">Grid</button>
+
+<h1>{{surname | uppercase}}</h1>
+<h1> {{date}}</h1>
+<h1> {{date | date }}</h1>
+<h1> {{date | date:'long'}}</h1>
+
+<!--<app-employee></app-employee>-->
+
+<ul *ngFor="let employ of employee">
+
+  <li>{{employ.name }}.{{employ.age}}-{{employ.id}}</li>
+
+</ul>
+
+

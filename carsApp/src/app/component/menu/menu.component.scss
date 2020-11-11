@@ -1,0 +1,17 @@
+ul {
+  display: inline-flex;
+  border: 1px black solid;
+background-color: rgb(1, 1, 44);
+  margin: 5px;
+  li {
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    margin: 10px 45px 10px 0px;
+    color: white;
+  }
+}
+ul:hover{
+    background-color: gray;
+  }

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tester-007": {
+      "hosting": {
+        "carsApp": [
+          "tester-007"
+        ]
+      }
+    }
+  }
+}

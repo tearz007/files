@@ -1,0 +1,16 @@
+<form >
+  <input
+    type="text"
+    placeholder="search by name"
+    #id
+
+    (keyup)="searchName($event.target.value)"
+  />
+</form>
+<button>view</button>
+<h1>{{ names }}</h1>
+
+
+
+
+

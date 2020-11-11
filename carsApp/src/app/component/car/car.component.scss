@@ -1,0 +1,47 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.carList {
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+  .id {
+    border: solid 1px rgb(1, 1, 44);
+    background-color: rgb(1, 1, 44);
+    margin-right: 5px;
+    padding: 10px;
+    color: white;
+  }
+  .names {
+    background-color: gray;
+    margin-right: 5px;
+    width: 100px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .btn {
+    width: 30px;
+    height: 43px;
+    background-color: rgb(1, 1, 44);
+    position: relative;
+
+    .btn_col {
+      width: 50%;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+    }
+    .one {
+      transform: rotate(-45deg);
+    }
+    .two {
+      transform: rotate(45deg);
+    }
+  }
+}
+.names:hover,.btn:hover{
+  box-shadow: 0 0 5px ;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tester-007": {
+      "hosting": {
+        "fireApp": [
+          "tester-007"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!--<div class="emp" >
+  <input type="text" placeholder="enter name"  [(ngModel)]="name">
+  <br>
+  <input type="number" placeholder="enter age" [(ngModel)]="age">
+  <br>
+  <input type="text" placeholder="enter address" [(ngModel)]="address">
+<br>
+<br>
+  <button (click)="addEmployee()" [disabled]="!name|| !age || !address">Create Employee</button>
+
+  <h1>{{name}}</h1>
+</div>-->
+
+<div class="emp">
+  <input type="text" placeholder="enter name" [(ngModel)]="employee.name" />
+  <br />
+  <input type="number" placeholder="enter age" [(ngModel)]="employee.age" />
+  <br />
+  <input
+    type="text"
+    placeholder="enter address"
+    [(ngModel)]="employee.address"
+  />
+  <br />
+  <br />
+  <button
+    (click)="addEmployee()"
+    [disabled]="!employee.name || !employee.age || !employee.address"
+  >
+    Create Employee
+  </button>
+  <br />
+  <button
+    (click)="getEmployee()"
+    style="background-color: royalblue; padding: 5px 20px 5px 20px"
+  >
+    view
+  </button>
+</div>
+
+<div class="infor" *ngFor="let list of emplyCollection">
+  <h1>{{ "Name : " + list.name }}</h1>
+  <h1>{{ "Age : " + list.age }}</h1>
+  <h1>{{ "Address : " + list.address }}</h1>
+  <br />
+  <button (click)="deleteEmployee(list.key)" style="background-color: red; padding: 10px">
+    Delete
+  </button>
+  <button
+    (click)="updateEmployee(list)"
+  >
+    update Employee
+  </button>
+  <br />
+</div>

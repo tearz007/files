@@ -1,0 +1,8 @@
+{
+  "/carsDb/*":{
+    "target":"https://tearz007.github.io",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin":true
+  }
+}
